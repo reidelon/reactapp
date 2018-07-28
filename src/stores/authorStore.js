@@ -17,7 +17,7 @@ var AuthorStore = assign({}, EventEmitter.prototype, {
         this.removeListener(CHANGE_EVENT, callback);
     },
     emitChange: function () {
-        this.emitChange(CHANGE_EVENT);
+        this.emit(CHANGE_EVENT);
     },
     getAllAuthors: function () {
         return _author;
